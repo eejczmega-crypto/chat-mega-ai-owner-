@@ -1,0 +1,15 @@
+{
+  "name": "chat-mega-ai-cloudflare-owner-edition",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create chat-mega-db",
+    "db:init": "wrangler d1 execute chat-mega-db --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
